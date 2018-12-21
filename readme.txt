@@ -27,3 +27,7 @@ git diff HEAD命令可以查看工作区和版本库里面最新版本的区别
 git checkout -- file可以丢弃工作区的修改
 总之，就是让这个文件回到最近一次git commit或git add时的状态。
 git reset HEAD -- file可以把暂存区的修改撤销掉（unstage），重新放回工作区。
+已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+6.git rm删掉工作区和暂存区文件，并且git commit删除本地库文件
+再用git reset --hard 恢复本地库的文件
+再用git ckeckout -- file恢复工作区文件
