@@ -19,6 +19,11 @@ git log --pretty=oneline
 git reset --hard HEAD^ 回退一步
 git reset --hard commit_id
 git log 查看提交历史 以便确定回退到哪个版本
-git reflog 查看命令历史 以便确定要回到未来的哪个版本
+git reflog (-- file) 查看命令历史 以便确定要回到未来的哪个版本
  4.
-123
+为什么Git比其他版本控制系统设计得优秀，因为Git跟踪并管理的是修改，而非文件。
+git diff HEAD命令可以查看工作区和版本库里面最新版本的区别
+5.
+git checkout -- file可以丢弃工作区的修改
+总之，就是让这个文件回到最近一次git commit或git add时的状态。
+git reset HEAD -- file可以把暂存区的修改撤销掉（unstage），重新放回工作区。
