@@ -20,3 +20,5 @@ git reset --hard HEAD^ 回退一步
 git reset --hard commit_id
 git log 查看提交历史 以便确定回退到哪个版本
 git reflog 查看命令历史 以便确定要回到未来的哪个版本
+ 4.
+123
