@@ -43,3 +43,8 @@ GitHub给出的地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这
 实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，
 但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
+
+8.git clone与git pull的区别
+从远程服务器克隆一个一模一样的版本库到本地,复制的是整个版本库，叫做clone.（clone是将一个库复制到你的本地，是一个本地从无到有的过程）
+从远程服务器获取到一个branch分支的更新到本地，并更新本地库，叫做pull.（pull是指同步一个在你本地有版本的库内容更新的部分到你的本地库）
+git pull相当于是从远程获取最新版本并merge（合并）到本地     git pull = git fetch + git merge，git fetch更安全一些
